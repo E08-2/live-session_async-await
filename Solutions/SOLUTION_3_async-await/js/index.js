@@ -4,7 +4,7 @@ const modalParagraph = document.querySelector("#myModal p");
 const continueButton = document.querySelector("#continue");
 const h2 = document.querySelector("h2");
 
-// Create a function which returns the result of a promise after 10 seconds
+// Create a promise which resolves after 10 seconds
 let promiseOfModal = new Promise(resolve => {
     window.setTimeout(() => {
         resolve("Async/await says: 'The User has been on the page for 10 seconds!'");
